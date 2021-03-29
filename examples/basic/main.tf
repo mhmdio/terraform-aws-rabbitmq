@@ -1,0 +1,5 @@
+module "basic" {
+  source = "../../"
+
+
+}

@@ -1,0 +1,21 @@
+# https://taskfile.dev
+
+version: "3"
+output: prefixed
+silent: true
+
+env:
+
+vars:
+
+tasks:
+  default:
+    cmds:
+      - echo "tf devops"
+
+  tfdoc:
+    desc: terraform-docs - A utility to generate documentation from Terraform modules in various output formats
+    dir: .
+    cmds:
+      - terraform-docs markdown . --output-file README.md
+
