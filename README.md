@@ -5,6 +5,7 @@ Terraform Module for AWS AmazonMQ - RabbitMQ
 Notes:
 
 - logging is disabled due to <https://github.com/hashicorp/terraform-provider-aws/issues/18067>
+- encryptionOptions is not supported for RabbitMQ brokers.
 - Specify a single subnet in [SINGLE_INSTANCE] deployment mode.
 
 <!-- BEGIN_TF_DOCS -->

@@ -18,10 +18,10 @@ resource "aws_mq_broker" "this" {
     password = var.password
   }
 
-  encryption_options {
-    kms_key_id        = var.kms_key_id
-    use_aws_owned_key = var.use_aws_owned_key
-  }
+  # encryption_options {
+  #   kms_key_id        = var.kms_key_id
+  #   use_aws_owned_key = var.use_aws_owned_key
+  # }
 
   maintenance_window_start_time {
     day_of_week = var.maintenance_window_start_time.day_of_week

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.0.5
+
+- disable KMS encryption - not supported yet with RabbitMQ
+
 ## v0.0.4
 
 - disable logging due to https://github.com/hashicorp/terraform-provider-aws/issues/18067

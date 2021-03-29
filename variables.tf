@@ -88,6 +88,7 @@ variable "password" {
 variable "kms_key_id" {
   type        = string
   description = "(optional) description"
+  default     = null
 }
 
 variable "use_aws_owned_key" {
