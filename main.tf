@@ -29,8 +29,9 @@ resource "aws_mq_broker" "this" {
     time_zone   = var.maintenance_window_start_time.time_zone
   }
 
-  logs {
-    general = var.logs_general
-  }
+  # logs { #   Message_: "Audit logging is not supported for RabbitMQ brokers."
+  #   general = var.logs_general
+  #   audit   = false
+  # }
 
 }

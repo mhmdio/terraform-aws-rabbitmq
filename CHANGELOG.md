@@ -1,7 +1,19 @@
-# v0.0.2
+# CHANGELOG
+
+## v0.0.4
+
+- disable logging due to https://github.com/hashicorp/terraform-provider-aws/issues/18067
+
+## v0.0.3
+
+- update README.md
+- set audit = false
+
+## v0.0.2
 
 - update README.md
 - update CHANGELOG.md
-# v0.0.1
+
+## v0.0.1
 
 Initial commit
