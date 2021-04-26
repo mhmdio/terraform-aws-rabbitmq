@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.0 - 26/04/2021
+
+- remove required_version
+- update aws provider version
+- update examples
+
 ## v0.0.5
 
 - disable KMS encryption - not supported yet with RabbitMQ

@@ -11,16 +11,15 @@ Notes:
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-| Name                                                                      | Version   |
-| ------------------------------------------------------------------------- | --------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 0.14.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws)                   | ~> 3.34   |
+| Name                                                    | Version |
+| ------------------------------------------------------- | ------- |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.35 |
 
 ## Providers
 
 | Name                                              | Version |
 | ------------------------------------------------- | ------- |
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.34 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.35 |
 
 ## Modules
 
@@ -44,7 +43,7 @@ No modules.
 | <a name="input_engine_type"></a> [engine\_type](#input\_engine\_type)                                                           | (optional) Type of broker engine.                                                                                                                                                       | `string`                                                                                                        | `"RabbitMQ"`                                                                                                   |    no    |
 | <a name="input_engine_version"></a> [engine\_version](#input\_engine\_version)                                                  | (optional) Version of the broker engine. See the [AmazonMQ Broker Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html) for supported versions. | `string`                                                                                                        | `"3.8.6"`                                                                                                      |    no    |
 | <a name="input_host_instance_type"></a> [host\_instance\_type](#input\_host\_instance\_type)                                    | (Required) Broker's instance type. For example, `mq.t3.micro`, `mq.m5.large`.                                                                                                           | `string`                                                                                                        | n/a                                                                                                            |   yes    |
-| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id)                                                            | (optional) description                                                                                                                                                                  | `string`                                                                                                        | n/a                                                                                                            |   yes    |
+| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id)                                                            | (optional) description                                                                                                                                                                  | `string`                                                                                                        | `null`                                                                                                         |    no    |
 | <a name="input_logs_general"></a> [logs\_general](#input\_logs\_general)                                                        | (optional) description                                                                                                                                                                  | `bool`                                                                                                          | `true`                                                                                                         |    no    |
 | <a name="input_maintenance_window_start_time"></a> [maintenance\_window\_start\_time](#input\_maintenance\_window\_start\_time) | Configuration block for the maintenance window start time.                                                                                                                              | <pre>object({<br>    day_of_week = string<br>    time_of_day = string<br>    time_zone   = string<br>  })</pre> | <pre>{<br>  "day_of_week": "MONDAY",<br>  "time_of_day": "22:45",<br>  "time_zone": "Europe/Berlin"<br>}</pre> |    no    |
 | <a name="input_password"></a> [password](#input\_password)                                                                      | (optional) description                                                                                                                                                                  | `string`                                                                                                        | n/a                                                                                                            |   yes    |
